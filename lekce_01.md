@@ -3,17 +3,25 @@
 ## Harmonogram
 
 - Úvod - o robotovi
-- Test na Python
+- Rychlý kvíz na Python
 - Praktická cvičení
 - Volný souboj robotů
+
+## Rychlý kvíz na Python
+
+Až budete mít chvilku, tak prosím vyplňte krátký kvíz:
+
+[Odkaz na kvíz](https://forms.gle/V96ChH11spFH2go49)
 
 ## O robotovi
 
 ### Názvosloví
 
-- API
-- SDK
-- Gimbal, Chassis, LED,
+- API: aplikační rozhraní
+- Gimbal: hlava robota - otáčecí hlaveň s kamerou
+- Chassis: tělo robota - může se otáčet nezávisle
+- LED: osvětlení. Robot má osvětlenou hlavu, tělo a diodu pod hlavní
+- Marker: piktogram s čísly/písmeny/znaky
 - Python: proměnná, funkce, cyklus, podmínka
 
 ### Zdroje
@@ -27,7 +35,7 @@
 
 ## Úkoly
 
-Plňte zadané úkoly. Ideálně se snažte na řešení přijít a nedívejte se rovnou na výsledek (je uvedený vždy na další stránce). Pokud se vám budou zadané úkoly zdát moc jednoduché, plňte i bonusové úkoly.
+Plňte zadané úkoly. Ideálně se snažte na řešení přijít a nedívejte se rovnou na výsledek (je uvedený vždy na další stránce). Pokud se vám budou zadané úkoly zdát moc jednoduché, plňte i bonusové úkoly. Nebojte se ptát, pokud něco nepůjde :).
 
 ### #1 Rozblikat robota
 
@@ -155,7 +163,7 @@ ID=20-45: A-Z
 
 Pokud tedy chceme zjistit detekované číslo, musíme od ID markeru odečíst 10.
 
-##### Detekované číslo
+##### Detekované číslo - řešení
 
 <div style="page-break-after: always;"></div>
 
@@ -219,11 +227,13 @@ Bonus: při střelbě přehrajte zvuk.
 
 Pro otáčení hlavy (gimbalu) použijte následující funkce:
 
-- `gimbal_ctrl.set_rotate_speed(speed)` - Nastaví rychlost otáčení hlavy (můžete zkusit různé stupně rychlosti, avšak otestujte, že i ve větší rychlosti robot rozpozná markery)
-- `gimbal_ctrl.yaw_ctrl(degree)` - Otočí hlavu o `degree` stupňů (povolené hodnoty jsou od -250° do 250°).
 - `robot.set_mode(rm_define.robot_mode_free)` - Nastaví volný pohyb hlavy (tělo nebude následovat otáčení hlavy).
+- `gimbal_ctrl.set_rotate_speed(speed)` - Nastaví rychlost otáčení hlavy (můžete zkusit různé stupně rychlosti 0-540, avšak otestujte, že i ve větší rychlosti robot rozpozná markery)
+- `gimbal_ctrl.yaw_ctrl(degree)` - Otočí hlavu o `degree` stupňů (povolené hodnoty jsou od -250° do 250°).
 - `gimbal_ctrl.suspend()` - Pozastaví otáčení
 - `gimbal_ctrl.resume()` - Pokračuje v otáčení
+
+Bonus: místo čekání na další rozpoznání markeru s číslem si veďte evidenci již "rozstřílených" číslic a na takové markery pak nestřílejte.
 
 ### #4 Bonus - Hlídkování
 
