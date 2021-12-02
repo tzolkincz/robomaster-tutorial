@@ -227,7 +227,7 @@ Bonus: při střelbě přehrajte zvuk.
 
 Pro otáčení hlavy (gimbalu) použijte následující funkce:
 
-- `robot.set_mode(rm_define.robot_mode_free)` - Nastaví volný pohyb hlavy (tělo nebude následovat otáčení hlavy).
+- `robot_ctrl.set_mode(rm_define.robot_mode_free)` - Nastaví volný pohyb hlavy (tělo nebude následovat otáčení hlavy).
 - `gimbal_ctrl.set_rotate_speed(speed)` - Nastaví rychlost otáčení hlavy (můžete zkusit různé stupně rychlosti 0-540, avšak otestujte, že i ve větší rychlosti robot rozpozná markery)
 - `gimbal_ctrl.yaw_ctrl(degree)` - Otočí hlavu o `degree` stupňů (povolené hodnoty jsou od -250° do 250°).
 - `gimbal_ctrl.suspend()` - Pozastaví otáčení
