@@ -232,6 +232,7 @@ Pro otáčení hlavy (gimbalu) použijte následující funkce:
 - `gimbal_ctrl.yaw_ctrl(degree)` - Otočí hlavu o `degree` stupňů (povolené hodnoty jsou od -250° do 250°).
 - `gimbal_ctrl.suspend()` - Pozastaví otáčení
 - `gimbal_ctrl.resume()` - Pokračuje v otáčení
+- `gimbal_ctrl.yaw_pitch(degree)` - Náklon hlavy ve svislém směru o `degree` stupňů (0 je vodorovně).
 
 Bonus: místo čekání na další rozpoznání markeru s číslem si veďte evidenci již "rozstřílených" číslic a na takové markery pak nestřílejte.
 
