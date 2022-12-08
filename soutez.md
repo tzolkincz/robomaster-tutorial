@@ -1,4 +1,4 @@
-# Zadání soutěže
+# Zadání soutěže 2021
 
 Zkontrolujte si stav baterie robota!!!
 
@@ -17,11 +17,11 @@ Zkontrolujte si stav baterie robota!!!
 ## Bodování
 
 - Za každý splěný úkol dostanete 1 bod (rozsvícená světla, navštívená číslice)
-- Dráha se jede na čas. V případě shodného zisku bodů rozhodne o pořadí čas projetí tratě a kvality zdrohového kódu
+- Dráha se jede na čas. V případě shodného zisku bodů rozhodne o pořadí čas projetí tratě a kvality zdrojového kódu
 - Zdrojový kód bude ohodnocen 0 až 3 body
 - Nápověda za -2 body
 - Pokud se vám povede projet trať pod 50 sec, tak dostanete bonus 2 bodů, pokud pod 40 sec, dostanete 3 body
-- Pokud sedotknete tratě a nebo markeru, je to za postih -1 bod
+- Pokud se dotknete tratě a nebo markeru, je to za postih -1 bod
 - Pokud narazíte do tratě nebo do markeru (posunout krabici, nebo shodit marker) -2 body
 
 ## Povolené pomůcky
@@ -96,3 +96,23 @@ Dejte si pozor, jestli na řádce s chybou, nebo na předchozí řádce nechybí
 ### Python hlásí chybu na řádku, která ani není v programu
 
 Zkontrolujte počty argumentů funkcí (kolik hodnot dáváte do funkce). Např. dáváte do funkce jen jeden vstup a funkce očekává dva.
+
+### Robot vůbec (hrozně špatně) nerozeznává číslice
+
+Restartujte robota.
+
+### Pozor na správné odsazení bloků kódu (správně viz např.)
+
+```python
+
+if True:
+    prikaz1
+    prikaz2
+else:
+    prikaz3
+
+
+for i in range(10):
+    prikaz_se_provede_10x
+
+```
